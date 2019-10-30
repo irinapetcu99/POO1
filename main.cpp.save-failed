@@ -50,6 +50,11 @@ class Citire_si_Afisare
       ob = new Vector[n];
   }
 
+  Citire_si_Afisare( int nr_elem ) ///constructor cu parametru
+  {
+      this -> n = nr_elem;
+      ob = new Vector[n];
+  }
   void citire_si_afisare()
   {
       for( int i = 0; i < n; i++ )
@@ -60,7 +65,7 @@ class Citire_si_Afisare
       for( int i = 0; i < n; i++ )
           cout << ob[i];
   }
-  ~Citire_si_Afisare() ///destructor
+  ~Citire_si_Afisare()
   {
       delete [] ob;
   }
